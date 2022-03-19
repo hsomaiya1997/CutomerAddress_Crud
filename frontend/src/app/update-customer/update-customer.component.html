@@ -1,0 +1,42 @@
+<h3>Update Customer</h3>
+<div style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" required [(ngModel)]="Customer.name" name="name">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Email</label>
+      <input type="text" class="form-control" id="email" required [(ngModel)]="Customer.email" name="email">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Number</label>
+      <input type="text" class="form-control" id="mobile" maxlength="10" required [(ngModel)]="Customer.mobile" name="mobile">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Address</label>
+      <input type="text" maxlength="10" class="form-control" id="address" required [(ngModel)]="Customer.customerAddress.address" name="address">
+    </div>
+
+    <div class="form-group">
+      <label for="name">State</label>
+      <input type="text" class="form-control" id="state" required [(ngModel)]="Customer.customerAddress.state" name="state">
+    </div>
+
+    <div class="form-group">
+      <label for="name">City</label>
+      <input type="text" class="form-control" id="city" required [(ngModel)]="Customer.customerAddress.city" name="city">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Pin Code</label>
+      <input type="number" maxlength="10" class="form-control" id="pincode" required [(ngModel)]="Customer.customerAddress.pincode" name="pincode">
+    </div>
+
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>

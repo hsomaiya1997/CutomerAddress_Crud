@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item btn-default">
+        <a routerLink="customer" class="nav-link" style="float: right;" routerLinkActive="active">Customer List</a>
+    </li>
+    <li class="nav-item btn-danger">
+        <a routerLink="add" class="nav-link" style="float: right;" routerLinkActive="active">Add Customer</a>
+    </li>
+  </ul>
+</nav>
+
+
+<div class="container">
+  <br>
+  <hr>  
+  <div class="card">
+    <div class="card-body">
+  <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
